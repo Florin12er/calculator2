@@ -9,39 +9,45 @@
 </head>
 
 <body>
-    <div id="calculator">
-        <div class="display" id="display">
-            <input type="text" id="input" readonly="readonly" />
+    <div class="app" id="app">
+        <div class="name" id="name">
+            <h1>Calculator</h1>
         </div>
-        <div class="keys">
-            <div class="row">
-                <button id="clear">C</button>
-                <button id="backspace">CE</button>
-                <button id="percent">%</button>
-                <button id="divide">/</button>
+        <div id="calculator" class="calculator">
+            <div class="display" id="display">
+                <input type="text" id="input" readonly="readonly" />
             </div>
-            <div class="row">
-                <button id="seven">7</button>
-                <button id="eight">8</button>
-                <button id="nine">9</button>
-                <button id="multiply">*</button>
-            </div>
-            <div class="row">
-                <button id="four">4</button>
-                <button id="five">5</button>
-                <button id="six">6</button>
-                <button id="subtract">-</button>
-            </div>
-            <div class="row">
-                <button id="one">1</button>
-                <button id="two">2</button>
-                <button id="three">3</button>
-                <button id="add">+</button>
-            </div>
-            <div class="row">
-                <button id="zero">0</button>
-                <button id="decimal">.</button>
-                <button id="equals">=</button>
+            <div class="keys">
+                <div class="row">
+                    <button id="clear" data-key="C">C</button>
+                    <button id="backspace" data-key="CE">CE</button>
+                    <button id="percent" data-key="%">%</button>
+                    <button id="divide" data-key="/">/</button>
+                </div>
+                <div class="row">
+                    <button id="seven" class="number" data-key="7">7</button>
+                    <button id="eight" class="number" data-key="8">8</button>
+                    <button id="nine" class="number" data-key="9">9</button>
+                    <button id="multiply" data-key="*">*</button>
+                </div>
+                <div class="row">
+                    <button id="four" class="number" data-key="4">4</button>
+                    <button id="five" class="number" data-key="5">5</button>
+                    <button id="six" class="number" data-key="6">6</button>
+                    <button id="subtract" data-key="-">-</button>
+                </div>
+                <div class="row">
+                    <button id="one" class="number" data-key="1">1</button>
+                    <button id="two" class="number" data-key="2">2</button>
+                    <button id="three" class="number" data-key="3">3</button>
+                    <button id="add" data-key="+">+</button>
+                </div>
+                <div class="row">
+                    <button id="zero" class="number" data-key="0">0</button>
+                    <button id="plusMinus" data-key="+/-">+/-</button>
+                    <button id="decimal" data-key=".">.</button>
+                    <button id="equals" data-key="=">=</button>
+                </div>
             </div>
         </div>
     </div>
